@@ -2287,30 +2287,30 @@
 			)
 		)
 		(pin "2"
-			(uuid "f492b639-b198-49a6-b21d-f706e480df66")
+			(uuid "26b71e91-b9de-40cb-bf88-e473f2ae7f6f")
 		)
 		(pin "3"
-			(uuid "aa186281-8ad1-4960-899d-5decf56c5ede")
+			(uuid "c498fdb1-a577-4162-b9ed-166c4dcb8202")
 		)
 		(pin "1"
-			(uuid "aaa72d22-665a-4fb0-a75d-8d6b8e89eae6")
+			(uuid "3b5c27e4-983f-40b4-943b-cffdb09684f4")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "Q10")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "Q1")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "Q4")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "Q7")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "Q10")
 					(unit 1)
 				)
 			)
@@ -2593,30 +2593,30 @@
 			)
 		)
 		(pin "2"
-			(uuid "d54167d2-9c7f-458e-be5c-e8c71f7b76ec")
+			(uuid "67952b24-a997-4cf8-82e8-1ec57c45c9cb")
 		)
 		(pin "3"
-			(uuid "6a776402-abca-41d2-ad33-21559b405c06")
+			(uuid "5f96578d-724a-45ce-b2ef-857a1f355ec6")
 		)
 		(pin "1"
-			(uuid "cdc836d1-45c0-40bd-b530-eba57fc5353b")
+			(uuid "91ebe988-724c-451f-8a33-98dfa4da4538")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "Q12")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "Q3")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "Q6")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "Q9")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "Q12")
 					(unit 1)
 				)
 			)
@@ -2899,30 +2899,30 @@
 			)
 		)
 		(pin "2"
-			(uuid "0ddee0df-1ace-4fb4-8c5b-b825f598adcc")
+			(uuid "46a2aa29-a62a-4ba6-b030-75f866a9eebf")
 		)
 		(pin "3"
-			(uuid "48647b1b-59f0-40eb-a267-91b0e6cbe0b4")
+			(uuid "32e2af25-2d01-4c63-808e-fb6e0f8d7541")
 		)
 		(pin "1"
-			(uuid "0c499dff-f5b3-49e5-9de3-7bb5fb0e81ee")
+			(uuid "05bd32e9-90cc-4a5d-80be-f0a45ca2eda0")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "Q11")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "Q2")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "Q5")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "Q8")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "Q11")
 					(unit 1)
 				)
 			)
@@ -2995,24 +2995,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "92ed0c6f-3ecc-42d6-a979-b263ecce5cc6")
+			(uuid "59693df8-f40d-43e9-b594-625bc281e67b")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR045")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR024")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR031")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR038")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -3085,24 +3085,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "ed95df18-bba5-4ccf-b4fb-3bd3f1b0a199")
+			(uuid "7c3c6b7a-0d6c-4eb7-9489-a845a4f4b82c")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR047")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR026")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR033")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR040")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3175,24 +3175,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "258fee65-c598-4aa2-909e-e64b66fb5419")
+			(uuid "949b3608-3a15-4d64-9afb-24c402efb3d5")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR041")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR020")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR027")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR034")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -3265,24 +3265,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "f1f069b4-186b-49bb-aae0-5102d12e2462")
+			(uuid "90c71d7e-0c54-4521-ac0d-daa3898fb8c4")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR043")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR022")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR029")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR036")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -3355,24 +3355,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6be7c0e-aa43-463f-8e55-532cff3ff027")
+			(uuid "193d1840-b1f7-4d1c-8570-8ddc2792b9be")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR042")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR021")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR028")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR035")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -3632,27 +3632,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "ebcc2a29-36b7-4f6f-8820-8d84f49c175d")
+			(uuid "ddac5d2b-e7bb-4020-a915-439a1bb164f0")
 		)
 		(pin "1"
-			(uuid "298fe11f-983f-4438-939d-5e5ceeffc9b0")
+			(uuid "535ef1e9-a292-4523-8eac-d1930c90ed99")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "R26")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "R9")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "R14")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "R20")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -3725,24 +3725,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd3e7867-eece-49cc-890d-8f70cf02b60d")
+			(uuid "6282246c-ba1d-45f8-9bef-8b50870aa26d")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR046")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR025")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR032")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR039")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -3815,24 +3815,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "2393150e-e128-4d3e-add0-411ab9b89937")
+			(uuid "c512637e-57a3-4640-97df-9428d550b4d9")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "#PWR044")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "#PWR023")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR030")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR037")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -4091,27 +4091,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "31319b6a-5d2a-4e42-9a25-0453f3e8adce")
+			(uuid "46fa3516-92a6-4b49-b02e-b9d39f1761d9")
 		)
 		(pin "1"
-			(uuid "1570ab2a-5b90-4bb8-9bbc-a2ec1fb53504")
+			(uuid "6cf8643d-f047-4b95-909a-28ecd1da58a5")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "R31")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "R13")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "R19")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "R25")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "R31")
 					(unit 1)
 				)
 			)
@@ -4370,27 +4370,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "390fc104-5142-4d02-be04-69a4d0add5fd")
+			(uuid "a755ebb9-016e-4040-bc7f-653cc22fa9cf")
 		)
 		(pin "1"
-			(uuid "c5ed7a6e-3ab8-410f-997f-a2b680eb0919")
+			(uuid "b6841c0a-ffed-4fb1-b880-469ed5a57695")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "R29")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "R11")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "R17")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "R23")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "R29")
 					(unit 1)
 				)
 			)
@@ -4650,27 +4650,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "8103f120-71ad-4dc1-bbd2-0a4c35b1ea8e")
+			(uuid "f29655e2-07ed-4bc3-9276-f33b564087c3")
 		)
 		(pin "1"
-			(uuid "b98f1af1-d4f0-42c3-9cf2-6b0988b6bc35")
+			(uuid "425c22f1-0c8e-4484-bc68-078a54a952c5")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "R30")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "R12")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "R18")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "R24")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -4744,27 +4744,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "890748d1-d8be-428c-bf8e-895965531188")
+			(uuid "5035eaea-9233-430d-a773-92539d1ee103")
 		)
 		(pin "1"
-			(uuid "6331621e-5902-449b-bb51-92806b7b475a")
+			(uuid "c5ab11a1-8c86-42ba-a836-a6ae724511a8")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "J7")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "J1")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "J3")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "J5")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -5023,27 +5023,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "66b321d4-537f-4332-a5ba-5c95ce16e460")
+			(uuid "642f803d-1a9e-4011-adb5-8009289ba02c")
 		)
 		(pin "1"
-			(uuid "7912fda2-0093-4cae-90ca-c6bd0b8fa995")
+			(uuid "2b59a9d8-6032-494b-9bf1-b8a762e77777")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "R27")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "R8")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "R15")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "R21")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -5303,27 +5303,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "38f3d211-f30a-4927-8c29-189eb4e3cdf4")
+			(uuid "a5c64598-9d38-4191-8d39-baa02a9e9176")
 		)
 		(pin "1"
-			(uuid "da92caea-2bc9-4367-a1ee-e7a465e214a2")
+			(uuid "fbed0941-073f-478d-bc20-baa648b69a11")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "R28")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "R10")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "R16")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "R22")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -5397,27 +5397,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "f13d8f7e-9810-4d16-80a5-ee114b060382")
+			(uuid "6d68cb05-a063-4ed3-9d9f-b827338dbc9d")
 		)
 		(pin "1"
-			(uuid "976001e1-41e1-462e-a3a5-6faf31e7aaa3")
+			(uuid "b24ff4cd-33d1-42d8-ae97-1b43bf19b7aa")
 		)
 		(instances
 			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/1eff2540-c40d-4fb6-81b5-6bbbd31f0e52"
-					(reference "J8")
-					(unit 1)
-				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
 					(reference "J2")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/40b68f0a-9c71-4e79-bfb9-82c4d518d448"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "J4")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/4cf6cf50-229f-4da3-80de-31c2789941e9"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "J6")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "J8")
 					(unit 1)
 				)
 			)

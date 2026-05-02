@@ -416,7 +416,7 @@
         "uuid": "3e806b6f-981a-4254-9981-82c3b722d83a"
       }
     ],
-    "used_designators": "D1-3,#PWR4-49,L1-4,C1,C3-11,X1,R1-31,U3,Q1-12,J1-9",
+    "used_designators": "D1-3,#PWR4-63,L1-4,C1,C3-11,X1,R1-36,U3,Q1-12,J1-17",
     "variants": []
   },
   "sheets": [
@@ -426,19 +426,19 @@
     ],
     [
       "23cda4ab-5f94-4b22-b01f-773f841ea0c9",
-      "Switch1"
+      "Mosfet1"
     ],
     [
-      "40b68f0a-9c71-4e79-bfb9-82c4d518d448",
-      "Switch2"
+      "6b24176c-9123-40b9-a476-b520bab589a3",
+      "Mosfet2"
     ],
     [
-      "4cf6cf50-229f-4da3-80de-31c2789941e9",
-      "Switch3"
+      "df1ea5be-c725-4f9a-abe2-d4bb4292100f",
+      "Mosfet3"
     ],
     [
-      "1eff2540-c40d-4fb6-81b5-6bbbd31f0e52",
-      "Switch4"
+      "e620413b-550d-4698-ad25-f11c48c62dfa",
+      "Mosfet4"
     ]
   ],
   "text_variables": {},
