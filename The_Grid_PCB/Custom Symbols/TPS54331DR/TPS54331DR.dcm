@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS54331DR
+D Texas Instruments TPS54331DR, Step Down DC-DC Converter, 3A, Adjustable, 0.8  25 V, 8-Pin SOIC
+K
+F http://www.ti.com/lit/gpn/tps54331
+$ENDCMP
+#
+#End Doc Library
