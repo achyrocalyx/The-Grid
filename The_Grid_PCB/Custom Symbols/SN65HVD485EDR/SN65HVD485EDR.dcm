@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN65HVD485EDR
+D HALF-DUPLEX RS-485 TRANSCEIVER
+K
+F http://www.ti.com/lit/gpn/sn65hvd485e
+$ENDCMP
+#
+#End Doc Library

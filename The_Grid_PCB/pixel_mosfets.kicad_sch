@@ -2940,7 +2940,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "422988e7-3a4c-430e-acf2-c1fa59c526cc")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR053"
 			(at 120.65 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3000,19 +3000,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR046")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR053")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR060")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR067")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -3030,7 +3030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e1a0e1e-278f-4356-bd65-8aaba50f62b3")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR055"
 			(at 157.48 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3090,19 +3090,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR048")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR055")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR062")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR069")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -3120,7 +3120,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "787204cf-aab5-414c-95f3-5cbe9cd097f2")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR049"
 			(at 38.1 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3180,19 +3180,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR042")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR049")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR056")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR063")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -3210,7 +3210,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88e8a12d-add9-4dcc-812f-04115bdfab2b")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR051"
 			(at 81.28 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3270,19 +3270,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR044")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR051")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR058")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR065")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -3300,7 +3300,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b39c33c0-e70c-4297-9253-c1163881d6c5")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR050"
 			(at 49.53 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3360,19 +3360,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR043")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR050")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR057")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR064")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -3390,7 +3390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba0eb149-73da-4383-9fcd-a7142459f054")
-		(property "Reference" "R19"
+		(property "Reference" "R21"
 			(at 40.64 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3640,19 +3640,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "R19")
+					(reference "R21")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
-					(reference "R25")
+					(reference "R27")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
-					(reference "R31")
+					(reference "R33")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
-					(reference "R37")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -3670,7 +3670,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "be2b65bd-7f6b-48b0-81e4-bc2bf0cb6b9d")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR054"
 			(at 132.08 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3730,19 +3730,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR047")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR054")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR061")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR068")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -3760,7 +3760,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce3005ce-77d6-45cb-a4d1-0d9b55120fd6")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR052"
 			(at 92.71 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -3820,19 +3820,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "#PWR045")
-					(unit 1)
-				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR052")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
 					(reference "#PWR059")
 					(unit 1)
 				)
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
 					(reference "#PWR066")
+					(unit 1)
+				)
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -3850,7 +3850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e2cb7a7c-019d-4e06-b34a-24c99336044d")
-		(property "Reference" "R22"
+		(property "Reference" "R24"
 			(at 114.3 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4099,19 +4099,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "R22")
+					(reference "R24")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
-					(reference "R28")
+					(reference "R30")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
-					(reference "R34")
+					(reference "R36")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
-					(reference "R40")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -4129,7 +4129,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e972318f-5f00-4556-8a07-6a5b7fc0fce2")
-		(property "Reference" "R20"
+		(property "Reference" "R22"
 			(at 74.93 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4378,19 +4378,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "R20")
+					(reference "R22")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
-					(reference "R26")
+					(reference "R28")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
-					(reference "R32")
+					(reference "R34")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
-					(reference "R38")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -4408,7 +4408,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea247dee-6486-4f72-915d-672bd53d9922")
-		(property "Reference" "R23"
+		(property "Reference" "R25"
 			(at 123.19 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4658,19 +4658,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "R23")
+					(reference "R25")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
-					(reference "R29")
+					(reference "R31")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
-					(reference "R35")
+					(reference "R37")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
-					(reference "R41")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -4793,7 +4793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2b9b341-0388-4dc6-bc25-334bd2954b29")
-		(property "Reference" "R18"
+		(property "Reference" "R20"
 			(at 31.75 54.61 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5042,19 +5042,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "R18")
+					(reference "R20")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
-					(reference "R24")
+					(reference "R26")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
-					(reference "R30")
+					(reference "R32")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
-					(reference "R36")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -5072,7 +5072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa18756d-afe9-495f-bdff-d5196cefe3d7")
-		(property "Reference" "R21"
+		(property "Reference" "R23"
 			(at 83.82 64.7699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5322,19 +5322,19 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/23cda4ab-5f94-4b22-b01f-773f841ea0c9"
-					(reference "R21")
+					(reference "R23")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/6b24176c-9123-40b9-a476-b520bab589a3"
-					(reference "R27")
+					(reference "R29")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/df1ea5be-c725-4f9a-abe2-d4bb4292100f"
-					(reference "R33")
+					(reference "R35")
 					(unit 1)
 				)
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a/e620413b-550d-4698-ad25-f11c48c62dfa"
-					(reference "R39")
+					(reference "R41")
 					(unit 1)
 				)
 			)
