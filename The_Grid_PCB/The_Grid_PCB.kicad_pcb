@@ -48682,7 +48682,7 @@
 		)
 	)
 	(gr_text "THE GRID\nXiao Build 2026\nPCB Rev 1"
-		(at 177.2 84.4 0)
+		(at 173.2 85 0)
 		(layer "F.SilkS")
 		(uuid "06bd3d4a-fd34-4832-8251-1035cbc18f1f")
 		(effects
