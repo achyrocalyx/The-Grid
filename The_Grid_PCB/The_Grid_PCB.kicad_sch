@@ -436,6 +436,265 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Screw_Terminal_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 3.048) (xy 0.508 2.2098)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TC2050"
 			(exclude_from_sim no)
 			(in_bom no)
@@ -968,164 +1227,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector_Generic:Conn_01x02"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x02"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Conn_01x02_1_1"
-				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -12915,6 +13016,16 @@
 	)
 	(wire
 		(pts
+			(xy 133.35 207.01) (xy 133.35 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07373ec1-48f4-491d-a964-f0c23dec6a39")
+	)
+	(wire
+		(pts
 			(xy 298.45 219.71) (xy 300.99 219.71)
 		)
 		(stroke
@@ -13955,6 +14066,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 207.01) (xy 133.35 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71600e3a-3155-4bf7-9dfd-94f36fc2e76e")
+	)
+	(wire
+		(pts
 			(xy 308.61 123.19) (xy 313.69 123.19)
 		)
 		(stroke
@@ -14625,6 +14746,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 207.01) (xy 181.61 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9b26886-4170-47cf-8cfd-f5e0fc9f400f")
+	)
+	(wire
+		(pts
 			(xy 133.35 201.93) (xy 139.7 201.93)
 		)
 		(stroke
@@ -14912,6 +15043,16 @@
 			(type default)
 		)
 		(uuid "cdbd2772-fd09-4edb-9295-e09e394bc668")
+	)
+	(wire
+		(pts
+			(xy 181.61 207.01) (xy 181.61 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce09f98f-2f6b-4abd-af4f-1a8afdf5b347")
 	)
 	(wire
 		(pts
@@ -15985,7 +16126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0409b87e-2a9f-4191-bf3e-5c7e8d5f8e47")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR031"
 			(at 215.9 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -16045,7 +16186,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR029")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -16063,7 +16204,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04f84d53-2240-4509-9d50-bf7dabccb372")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR033"
 			(at 223.52 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -16123,7 +16264,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR031")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -16202,99 +16343,6 @@
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 170.18 204.47 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "133db605-dd68-4f92-a23b-54e05aa8c99c")
-		(property "Reference" "J4"
-			(at 167.64 204.4701 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 167.64 201.9301 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "james_custom_footprint_library:JST_XH_B02B-XH-A_02x2.50mm_7.32x7.5_RightAngle"
-			(at 170.18 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "A254F2W1-2H2P12"
-			(at 170.18 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 170.18 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C47326862"
-			(at 170.18 204.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4355035a-8e6b-4eb9-a31a-b3468fb3ea67")
-		)
-		(pin "2"
-			(uuid "7354aebc-ed26-49b8-a77e-35eda067f0f8")
-		)
-		(instances
-			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -16985,7 +17033,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19cfa3fc-3393-4153-868b-0af22b650099")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR025"
 			(at 185.42 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -17045,7 +17093,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR023")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -17063,7 +17111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1efc6c69-1ae3-4104-8102-34d0dda18cb5")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR040"
 			(at 280.67 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -17123,7 +17171,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR038")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -17329,7 +17377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26343dd8-401e-4e0a-8819-d1ddc3a83a1e")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR018"
 			(at 173.99 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -17389,7 +17437,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR078")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -18144,7 +18192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3671b51d-6149-48a6-86b7-72b4d483dd28")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR048"
 			(at 306.07 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -18204,7 +18252,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR046")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -18222,7 +18270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39d535e6-27b0-4ec5-b5aa-c71768eba575")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR027"
 			(at 186.69 143.51 0)
 			(hide yes)
 			(show_name no)
@@ -18282,7 +18330,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR025")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -18547,7 +18595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41265595-f6ab-4f06-9ad0-b69ebdf26437")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR049"
 			(at 313.69 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -18607,7 +18655,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR047")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -19495,99 +19543,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x02")
-		(at 144.78 201.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cd8ded9-a22c-47f5-9f15-8d3c11157a17")
-		(property "Reference" "J3"
-			(at 147.32 201.9299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 147.32 204.4699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "james_custom_footprint_library:JST_XH_B02B-XH-A_02x2.50mm_7.32x7.5_RightAngle"
-			(at 144.78 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "A254F2W1-2H2P12"
-			(at 144.78 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 144.78 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C47326862"
-			(at 144.78 201.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9cd5c6b2-22f6-4349-af38-2b9e3747c7a2")
-		)
-		(pin "2"
-			(uuid "d5ea4c36-895c-4283-b163-3b9a2b4eb864")
-		)
-		(instances
-			(project "The_Grid_PCB"
-				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 187.96 72.39 0)
 		(unit 1)
@@ -19599,7 +19554,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f19fc75-7da8-4781-9140-e91d4a0ef88e")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR029"
 			(at 187.96 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -19659,7 +19614,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR027")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -20117,7 +20072,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5461ad5f-3a2e-4d76-a94d-91570a216587")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR036"
 			(at 248.92 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -20177,7 +20132,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR034")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -20705,7 +20660,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "596bdb7b-45cb-43c5-a034-1dcf39538465")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR035"
 			(at 248.92 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -20765,7 +20720,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR033")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -21207,7 +21162,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "633aec66-4573-481f-b1a2-763afd52b15c")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR046"
 			(at 300.99 215.9 0)
 			(hide yes)
 			(show_name no)
@@ -21267,7 +21222,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR044")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -22007,6 +21962,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 144.78 204.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a58a072-2b67-45f3-bedc-49fa772d642b")
+		(property "Reference" "J3"
+			(at 147.32 203.1999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 147.32 205.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-3P_1x03_P2.54mm_Horizontal"
+			(at 144.78 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "DB125-2.54-3P-GN-S"
+			(at 144.78 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 144.78 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C918121"
+			(at 144.78 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fefefff1-347a-448b-b14f-ed86eb9ebcfa")
+		)
+		(pin "1"
+			(uuid "21d6719f-3f4c-4909-aa6f-2a93976dfcfb")
+		)
+		(pin "3"
+			(uuid "315d8d31-2a80-4c3b-a440-0deabc6b2e41")
+		)
+		(instances
+			(project "The_Grid_PCB"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Capacitors:0603,100nF")
 		(at 173.99 105.41 0)
 		(unit 1)
@@ -22490,7 +22541,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71a401e6-b838-4f6e-bdff-c9d9c5fb5726")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR050"
 			(at 313.69 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -22550,7 +22601,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR048")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -22908,7 +22959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7406d2ae-3c9a-49b0-ba64-70412cb2ba84")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR019"
 			(at 173.99 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -22968,7 +23019,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR018")
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -23458,7 +23509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "770aba4c-9dd8-4e71-97fe-a272c5989e3c")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR030"
 			(at 195.58 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -23518,7 +23569,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR077")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -23536,7 +23587,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "786cc004-0fb0-476a-be96-fa5f836e829b")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR020"
 			(at 173.99 231.14 0)
 			(hide yes)
 			(show_name no)
@@ -23596,7 +23647,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR019")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -24663,6 +24714,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 133.35 208.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "83825644-b9f4-4fed-9690-61f91c36fe86")
+		(property "Reference" "#PWR017"
+			(at 133.35 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a2af753-3875-48f1-8a64-c72e9b4350ee")
+		)
+		(instances
+			(project "The_Grid_PCB"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 185.42 187.96 0)
 		(mirror y)
 		(unit 1)
@@ -24674,7 +24803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83a0a509-cfdd-475a-943e-8400952b870f")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR026"
 			(at 185.42 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -24734,7 +24863,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR024")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -25148,7 +25277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a1ab2af-a460-4b18-95ce-7f16e01a8fc3")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR039"
 			(at 266.7 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -25208,7 +25337,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR037")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -25463,7 +25592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b749c79-8943-4f85-a27c-d2c05353321b")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 248.92 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -25523,7 +25652,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR035")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -25778,7 +25907,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8dd5dc63-3937-4339-a2d8-29a2890ea0d5")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR045"
 			(at 300.99 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -25838,7 +25967,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR043")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -26215,7 +26344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a03dc623-1cbf-44c8-bb87-e38645c41c68")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR038"
 			(at 254 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -26275,7 +26404,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR036")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -27296,7 +27425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8ee8208-05c0-4f16-a53f-3f28d108fccd")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR022"
 			(at 180.34 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -27356,7 +27485,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR021")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -27842,7 +27971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2065f3d-4842-4a00-8c70-2430da68d98a")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR023"
 			(at 180.34 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -27902,7 +28031,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR022")
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -28011,7 +28140,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b33c6a81-80da-424f-8d89-87db0a93cd7b")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR042"
 			(at 281.94 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -28071,7 +28200,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR040")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -28660,6 +28789,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 170.18 204.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bce1899f-f3ad-42ae-a137-d347161dcd60")
+		(property "Reference" "J4"
+			(at 170.18 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 170.18 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-3P_1x03_P2.54mm_Horizontal"
+			(at 170.18 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "DB125-2.54-3P-GN-S"
+			(at 170.18 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 170.18 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C918121"
+			(at 170.18 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c68445d6-e0ca-4f53-a05f-cf8691e6451a")
+		)
+		(pin "1"
+			(uuid "8d4918e7-8d6c-4bcb-b7c5-e8167fbf6bcd")
+		)
+		(pin "3"
+			(uuid "5396eb55-5eea-470f-a133-ad237ff71712")
+		)
+		(instances
+			(project "The_Grid_PCB"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SN65HVD485EDR:SN65HVD485EDR")
 		(at 189.23 116.84 0)
 		(unit 1)
@@ -29183,7 +29406,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bee52918-080d-4eb5-b93f-2974dab07c0d")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR047"
 			(at 300.99 237.49 0)
 			(hide yes)
 			(show_name no)
@@ -29243,7 +29466,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR045")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -30032,7 +30255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a345b2-b7d8-42c9-a7ea-96e620813008")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR044"
 			(at 300.99 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -30092,7 +30315,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR042")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -30454,7 +30677,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7c87c88-7b16-41f0-bb0f-dbae78492e76")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR041"
 			(at 280.67 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -30514,7 +30737,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR039")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -31036,7 +31259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf23c474-de4d-467a-8663-baf2fb3b28fe")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR028"
 			(at 187.96 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -31096,7 +31319,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR026")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -31114,7 +31337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d094d0b1-174c-4c33-b3fa-f8299f32c585")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR034"
 			(at 248.92 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -31174,7 +31397,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR032")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -31424,7 +31647,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de70bfe6-ff71-49bf-b9d3-1505f12c7c96")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR032"
 			(at 219.71 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -31484,7 +31707,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR030")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -31502,7 +31725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dee94d26-9f2c-4d65-867f-5965887bdbc6")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR043"
 			(at 297.18 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -31562,7 +31785,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR041")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -31736,7 +31959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e22380bf-1623-4faa-a15f-960078b79a2c")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR021"
 			(at 173.99 241.3 0)
 			(hide yes)
 			(show_name no)
@@ -31796,7 +32019,7 @@
 		(instances
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
-					(reference "#PWR020")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -32880,6 +33103,84 @@
 			(project "The_Grid_PCB"
 				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 181.61 208.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb37c43c-60cf-4b76-8ad9-99134eb7c54a")
+		(property "Reference" "#PWR024"
+			(at 181.61 214.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 213.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 181.61 208.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "766080d2-8275-4b6f-8294-df2c1770b160")
+		)
+		(instances
+			(project "The_Grid_PCB"
+				(path "/3e806b6f-981a-4254-9981-82c3b722d83a"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
