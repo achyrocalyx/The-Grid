@@ -2,4 +2,5 @@
 	(version 7)
 	(lib (name "EasyEDA") (type "KiCad") (uri "${KICAD_3RD_PARTY}/EasyEDA.pretty") (options "") (descr ""))
 	(lib (name "silkscreen") (type "KiCad") (uri "${KIPRJMOD}/silkscreen") (options "") (descr ""))
+	(lib (name "BluePill_Header") (type "KiCad") (uri "${KIPRJMOD}/Custom Footprints/BluePill_Header.pretty") (options "") (descr ""))
 )
