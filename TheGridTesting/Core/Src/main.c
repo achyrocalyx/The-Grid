@@ -15,6 +15,25 @@
   *
   ******************************************************************************
   */
+
+/*
+PB1 -> TIM3_CH4 (R1)
+PB0 -> TIM3_CH3 (G1)
+PA7 -> TIM3_CH2 (B1)
+
+PA6 -> TIM3_CH1 (R2)
+PB6 -> TIM4_CH1 (G2)
+PB7 -> TIM4_CH2 (B2)
+
+PA2 -> TIM2_CH3 (R3)
+PA1 -> TIM2_CH2 (G3)
+PA0 -> TIM2_CH1 (B3)
+
+PB8 -> TIM4_CH3 (R4)
+PB9 -> TIM4_CH4 (G4)
+PA3 -> TIM2_CH4 (B4)
+*/
+
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -31,6 +50,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+uint8_t onboard_led = 0;
 
 /* USER CODE END PD */
 
@@ -63,6 +84,14 @@ static void MX_USART3_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+void set_rgb(uint8_t r, uint8_t g, uint8_t b)
+{
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, r);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, g);
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, b);
+}
+
 
 /* USER CODE END 0 */
 
@@ -101,6 +130,22 @@ int main(void)
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  /* Enable PWM Timers */
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
+
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -108,12 +153,35 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1);
-	HAL_Delay(1000);
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 0);
-    HAL_Delay(1000);
 	/* USER CODE BEGIN 3 */
+	if (onboard_led) {
+		// in while(1)
+		static uint8_t hue = 0;
+
+		// HSV to RGB, S=255 V=255
+		uint8_t region = hue / 43;
+		uint8_t remainder = (hue - region * 43) * 6;
+		uint8_t q = 255 - remainder;
+		uint8_t t = remainder;
+
+		uint8_t r, g, b;
+		switch (region) {
+		    case 0: r=255; g=t;   b=0;   break;
+		    case 1: r=q;   g=255; b=0;   break;
+		    case 2: r=0;   g=255; b=t;   break;
+		    case 3: r=0;   g=q;   b=255; break;
+		    case 4: r=t;   g=0;   b=255; break;
+		    default:r=255; g=0;   b=q;   break;
+		}
+
+		set_rgb(r, g, b);
+		hue++;  // wraps at 256 automatically (uint8_t)
+
+		HAL_Delay(5);
+	}
+	else {
+		set_rgb(0, 0, 0);
+	}
   }
   /* USER CODE END 3 */
 }
@@ -438,6 +506,20 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    if (GPIO_Pin == GPIO_PIN_15)
+    {
+        static uint32_t last_tick = 0;
+        if (HAL_GetTick() - last_tick > 100)
+        {
+            onboard_led = !onboard_led;
+            last_tick = HAL_GetTick();
+        }
+    }
+}
+
 
 /* USER CODE END 4 */
 
