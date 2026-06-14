@@ -1,0 +1,6 @@
+C:/Users/james/OneDrive/Documents/MIT 2025-2026/Small Build/The-Grid/FirmwareTesting/TheGridTesting/Core/Src/stm32f1xx_hal_msp.c:65:6:HAL_MspInit	24	static
+C:/Users/james/OneDrive/Documents/MIT 2025-2026/Small Build/The-Grid/FirmwareTesting/TheGridTesting/Core/Src/stm32f1xx_hal_msp.c:92:6:HAL_TIM_PWM_MspInit	32	static
+C:/Users/james/OneDrive/Documents/MIT 2025-2026/Small Build/The-Grid/FirmwareTesting/TheGridTesting/Core/Src/stm32f1xx_hal_msp.c:130:6:HAL_TIM_MspPostInit	48	static
+C:/Users/james/OneDrive/Documents/MIT 2025-2026/Small Build/The-Grid/FirmwareTesting/TheGridTesting/Core/Src/stm32f1xx_hal_msp.c:212:6:HAL_TIM_PWM_MspDeInit	16	static
+C:/Users/james/OneDrive/Documents/MIT 2025-2026/Small Build/The-Grid/FirmwareTesting/TheGridTesting/Core/Src/stm32f1xx_hal_msp.c:256:6:HAL_UART_MspInit	40	static
+C:/Users/james/OneDrive/Documents/MIT 2025-2026/Small Build/The-Grid/FirmwareTesting/TheGridTesting/Core/Src/stm32f1xx_hal_msp.c:299:6:HAL_UART_MspDeInit	16	static
