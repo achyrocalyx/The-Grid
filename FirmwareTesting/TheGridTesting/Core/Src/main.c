@@ -51,9 +51,6 @@ PA3 -> TIM2_CH4 (B4)
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
-uint8_t onboard_led = 0;
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,6 +66,8 @@ TIM_HandleTypeDef htim4;
 UART_HandleTypeDef huart3;
 
 /* USER CODE BEGIN PV */
+volatile uint8_t rainbow_flash_3 = 0;
+volatile uint8_t rainbow_flash_4 = 0;
 
 /* USER CODE END PV */
 
@@ -86,11 +85,32 @@ static void MX_USART3_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-void set_rgb(uint8_t r, uint8_t g, uint8_t b)
+void set_rgb_1(uint8_t r, uint8_t g, uint8_t b)
 {
     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_4, r);
     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_3, g);
     __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, b);
+}
+
+void set_rgb_2(uint8_t r, uint8_t g, uint8_t b)
+{
+    __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, r);
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_1, g);
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_2, b);
+}
+
+void set_rgb_3(uint8_t r, uint8_t g, uint8_t b)
+{
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, r);
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, g);
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, b);
+}
+
+void set_rgb_4(uint8_t r, uint8_t g, uint8_t b)
+{
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_3, r);
+    __HAL_TIM_SET_COMPARE(&htim4, TIM_CHANNEL_4, g);
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, b);
 }
 
 /* USER CODE END 0 */
@@ -154,33 +174,39 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	/* USER CODE BEGIN 3 */
-	if (onboard_led) {
-		// in while(1)
-		static uint8_t hue = 0;
+	static uint8_t hue = 0;
 
-		// HSV to RGB, S=255 V=255
-		uint8_t region = hue / 43;
-		uint8_t remainder = (hue - region * 43) * 6;
-		uint8_t q = 255 - remainder;
-		uint8_t t = remainder;
+	// HSV to RGB, S=255 V=255
+	uint8_t region = hue / 43;
+	uint8_t remainder = (hue - region * 43) * 6;
+	uint8_t q = 255 - remainder;
+	uint8_t t = remainder;
 
-		uint8_t r, g, b;
-		switch (region) {
-		    case 0: r=255; g=t;   b=0;   break;
-		    case 1: r=q;   g=255; b=0;   break;
-		    case 2: r=0;   g=255; b=t;   break;
-		    case 3: r=0;   g=q;   b=255; break;
-		    case 4: r=t;   g=0;   b=255; break;
-		    default:r=255; g=0;   b=q;   break;
-		}
+	uint8_t r, g, b;
+	switch (region) {
+		case 0: r=255; g=t;   b=0;   break;
+		case 1: r=q;   g=255; b=0;   break;
+		case 2: r=0;   g=255; b=t;   break;
+		case 3: r=0;   g=q;   b=255; break;
+		case 4: r=t;   g=0;   b=255; break;
+		default:r=255; g=0;   b=q;   break;
+	}
+	hue++;  // wraps at 256 automatically (uint8_t)
 
-		set_rgb(r, g, b);
-		hue++;  // wraps at 256 automatically (uint8_t)
+	HAL_Delay(5);
 
-		HAL_Delay(5);
+	if (rainbow_flash_3) {
+		set_rgb_3(r, g, b);
 	}
 	else {
-		set_rgb(0, 0, 0);
+		set_rgb_3(0, 0, 0);
+	}
+
+	if (rainbow_flash_4) {
+		set_rgb_4(r, g, b);
+	}
+	else {
+		set_rgb_4(0, 0, 0);
 	}
   }
   /* USER CODE END 3 */
@@ -509,15 +535,24 @@ static void MX_GPIO_Init(void)
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
-    if (GPIO_Pin == GPIO_PIN_15)
+    if (GPIO_Pin == GPIO_PIN_4)
     {
         static uint32_t last_tick = 0;
-        if (HAL_GetTick() - last_tick > 100)
+        if (HAL_GetTick() - last_tick > 200)
         {
-            onboard_led = !onboard_led;
+            rainbow_flash_3 = !rainbow_flash_3;
             last_tick = HAL_GetTick();
         }
     }
+    if (GPIO_Pin == GPIO_PIN_5)
+	{
+		static uint32_t last_tick = 0;
+		if (HAL_GetTick() - last_tick > 200)
+		{
+			rainbow_flash_4 = !rainbow_flash_4;
+			last_tick = HAL_GetTick();
+		}
+	}
 }
 
 
