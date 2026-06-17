@@ -173,7 +173,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	/* USER CODE BEGIN 3 */
+
+    /* USER CODE BEGIN 3 */
 	static uint8_t hue = 0;
 
 	// HSV to RGB, S=255 V=255
@@ -503,14 +504,14 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PA15 */
   GPIO_InitStruct.Pin = GPIO_PIN_15;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB3 PB4 PB5 */
   GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
@@ -533,27 +534,63 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
     if (GPIO_Pin == GPIO_PIN_4)
     {
-        static uint32_t last_tick = 0;
-        if (HAL_GetTick() - last_tick > 200)
-        {
-            rainbow_flash_3 = !rainbow_flash_3;
-            last_tick = HAL_GetTick();
+        static uint32_t press_tick = 0;
+        static uint32_t last_toggle = 0;
+
+        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_SET) {
+            press_tick = HAL_GetTick();
+        } else {
+            if (HAL_GetTick() - press_tick >= 10 &&
+                HAL_GetTick() - last_toggle > 200) {
+                rainbow_flash_3 = !rainbow_flash_3;
+                last_toggle = HAL_GetTick();
+            }
         }
     }
+
     if (GPIO_Pin == GPIO_PIN_5)
-	{
-		static uint32_t last_tick = 0;
-		if (HAL_GetTick() - last_tick > 200)
-		{
-			rainbow_flash_4 = !rainbow_flash_4;
-			last_tick = HAL_GetTick();
-		}
-	}
+    {
+        static uint32_t press_tick = 0;
+        static uint32_t last_toggle = 0;
+
+        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_SET) {
+            press_tick = HAL_GetTick();
+        } else {
+            if (HAL_GetTick() - press_tick >= 10 &&
+                HAL_GetTick() - last_toggle > 200) {
+                rainbow_flash_4 = !rainbow_flash_4;
+                last_toggle = HAL_GetTick();
+            }
+        }
+    }
 }
+
+//void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+//{
+//    if (GPIO_Pin == GPIO_PIN_4)
+//    {
+//        static uint32_t last_tick = 0;
+//        if (HAL_GetTick() - last_tick > 200)
+//        {
+//            rainbow_flash_3 = !rainbow_flash_3;
+//            last_tick = HAL_GetTick();
+//        }
+//    }
+//    if (GPIO_Pin == GPIO_PIN_5)
+//	{
+//		static uint32_t last_tick = 0;
+//		if (HAL_GetTick() - last_tick > 200)
+//		{
+//			rainbow_flash_4 = !rainbow_flash_4;
+//			last_tick = HAL_GetTick();
+//		}
+//	}
+//}
 
 
 /* USER CODE END 4 */
