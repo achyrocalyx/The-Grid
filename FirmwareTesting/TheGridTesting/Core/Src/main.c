@@ -515,16 +515,16 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(EXTI3_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(EXTI3_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(EXTI4_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(EXTI4_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
@@ -542,10 +542,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         static uint32_t press_tick = 0;
         static uint32_t last_toggle = 0;
 
+//        rainbow_flash_3 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4);
+
         if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_SET) {
             press_tick = HAL_GetTick();
         } else {
-            if (HAL_GetTick() - press_tick >= 10 &&
+            if (HAL_GetTick() - press_tick >= 1000 &&
                 HAL_GetTick() - last_toggle > 200) {
                 rainbow_flash_3 = !rainbow_flash_3;
                 last_toggle = HAL_GetTick();
@@ -558,10 +560,12 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         static uint32_t press_tick = 0;
         static uint32_t last_toggle = 0;
 
+//        rainbow_flash_4 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
+
         if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_SET) {
             press_tick = HAL_GetTick();
         } else {
-            if (HAL_GetTick() - press_tick >= 10 &&
+            if (HAL_GetTick() - press_tick >= 1000 &&
                 HAL_GetTick() - last_toggle > 200) {
                 rainbow_flash_4 = !rainbow_flash_4;
                 last_toggle = HAL_GetTick();
