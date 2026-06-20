@@ -69,6 +69,16 @@ UART_HandleTypeDef huart3;
 volatile uint8_t rainbow_flash_3 = 0;
 volatile uint8_t rainbow_flash_4 = 0;
 
+volatile uint32_t press_tick_3 = 0;
+volatile uint32_t current_toggle_3 = 0;
+volatile uint32_t last_toggle_3 = 0;
+volatile uint8_t potentially_3 = 0;
+volatile uint32_t press_tick_4 = 0;
+volatile uint32_t current_toggle_4 = 0;
+volatile uint32_t last_toggle_4 = 0;
+volatile uint8_t potentially_4 = 0;
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -175,6 +185,30 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	if (potentially_3) {
+		if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET) {
+			potentially_3 = 0;
+		}
+		else if (HAL_GetTick() - press_tick_3 >= 10) {
+			rainbow_flash_3 = !rainbow_flash_3;
+			potentially_3 = 0;
+
+		}
+	}
+
+	if (potentially_4) {
+		if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_RESET) {
+			potentially_4 = 0;
+		}
+		else if (HAL_GetTick() - press_tick_4 >= 10) {
+			rainbow_flash_4 = !rainbow_flash_4;
+			potentially_4 = 0;
+
+		}
+	}
+
+
 	static uint8_t hue = 0;
 
 	// HSV to RGB, S=255 V=255
@@ -194,7 +228,7 @@ int main(void)
 	}
 	hue++;  // wraps at 256 automatically (uint8_t)
 
-	HAL_Delay(5);
+	HAL_Delay(1);
 
 	if (rainbow_flash_3) {
 		set_rgb_3(r, g, b);
@@ -504,27 +538,27 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PA15 */
   GPIO_InitStruct.Pin = GPIO_PIN_15;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB3 PB4 PB5 */
   GPIO_InitStruct.Pin = GPIO_PIN_3|GPIO_PIN_4|GPIO_PIN_5;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING_FALLING;
-  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI3_IRQn, 1, 0);
+  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI3_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI4_IRQn, 1, 0);
+  HAL_NVIC_SetPriority(EXTI4_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI4_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 1, 0);
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
-  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 1, 0);
+  HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 
   /* USER CODE BEGIN MX_GPIO_Init_2 */
@@ -539,38 +573,22 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
     if (GPIO_Pin == GPIO_PIN_4)
     {
-        static uint32_t press_tick = 0;
-        static uint32_t last_toggle = 0;
-
-//        rainbow_flash_3 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4);
-
-        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_SET) {
-            press_tick = HAL_GetTick();
-        } else {
-            if (HAL_GetTick() - press_tick >= 1000 &&
-                HAL_GetTick() - last_toggle > 200) {
-                rainbow_flash_3 = !rainbow_flash_3;
-                last_toggle = HAL_GetTick();
-            }
-        }
+    	current_toggle_3 = HAL_GetTick();
+//		if (current_toggle_3 - last_toggle_3 > 50) {
+			press_tick_3 = current_toggle_3;
+			potentially_3 = 1;
+//		}
+        last_toggle_3 = current_toggle_3;
     }
 
     if (GPIO_Pin == GPIO_PIN_5)
     {
-        static uint32_t press_tick = 0;
-        static uint32_t last_toggle = 0;
-
-//        rainbow_flash_4 = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5);
-
-        if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_SET) {
-            press_tick = HAL_GetTick();
-        } else {
-            if (HAL_GetTick() - press_tick >= 1000 &&
-                HAL_GetTick() - last_toggle > 200) {
-                rainbow_flash_4 = !rainbow_flash_4;
-                last_toggle = HAL_GetTick();
-            }
-        }
+    	current_toggle_4 = HAL_GetTick();
+//		if (current_toggle_4 - last_toggle_4 > 50) {
+			press_tick_4 = current_toggle_4;
+			potentially_4 = 1;
+//		}
+        last_toggle_4 = current_toggle_4;
     }
 }
 
