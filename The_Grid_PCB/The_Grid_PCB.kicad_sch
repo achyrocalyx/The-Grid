@@ -8429,6 +8429,16 @@
 		)
 		(uuid "43bc28c6-6645-4d02-8d5f-8f38107ccdc6")
 	)
+	(text "In the alibaba version of these \nchips Pin20 is actually 5v!!!"
+		(exclude_from_sim no)
+		(at 134.112 48.768 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6a3cc791-fbcc-4b49-a06d-42ed5acf52b5")
+	)
 	(text "For start node - connect to devboard \nto use RS-485 Transceiver\n"
 		(exclude_from_sim no)
 		(at 157.226 216.916 0)
@@ -8560,12 +8570,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a90ae19-7f88-4464-9a48-28aef144cf3c")
-	)
-	(junction
-		(at 107.95 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3fc229b2-bfaa-4224-a4c4-da9266ff831e")
 	)
 	(junction
 		(at 306.07 48.26)
@@ -8780,6 +8784,10 @@
 	(no_connect
 		(at 107.95 96.52)
 		(uuid "61ec2734-70f3-44b7-b950-b3f6c33ffd27")
+	)
+	(no_connect
+		(at 107.95 50.8)
+		(uuid "9e545c53-2b20-4cb9-bd4d-d0cbb95d24f4")
 	)
 	(no_connect
 		(at 226.06 55.88)
@@ -9164,16 +9172,6 @@
 			(type default)
 		)
 		(uuid "26cbf2f4-9505-422b-8bc6-d2f20150185d")
-	)
-	(wire
-		(pts
-			(xy 107.95 50.8) (xy 107.95 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27948d99-1c5c-4f6d-8ebc-ba19d7c66cbd")
 	)
 	(wire
 		(pts
@@ -10077,7 +10075,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 50.8) (xy 116.84 50.8)
+			(xy 107.95 53.34) (xy 116.84 53.34)
 		)
 		(stroke
 			(width 0)
@@ -10417,7 +10415,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 50.8) (xy 116.84 58.42)
+			(xy 116.84 53.34) (xy 116.84 58.42)
 		)
 		(stroke
 			(width 0)
@@ -21672,7 +21670,7 @@
 				)
 			)
 		)
-		(property "Value" "SN65HVD485EDR"
+		(property "Value" "THDV1520"
 			(at 201.93 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21694,7 +21692,7 @@
 				(justify left top)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn65hvd485e"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/thvd1520.pdf?ts=1784928696084&ref_url=https%253A%252F%252Fwww.ti.com"
 			(at 210.82 311.76 0)
 			(hide yes)
 			(show_name no)
@@ -21743,7 +21741,7 @@
 				(justify left top)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SN65HVD485EDR"
+		(property "Manufacturer_Part_Number" "THDV1520"
 			(at 210.82 711.76 0)
 			(hide yes)
 			(show_name no)
@@ -21755,55 +21753,7 @@
 				(justify left top)
 			)
 		)
-		(property "Mouser Part Number" "595-SN65HVD485EDR"
-			(at 210.82 811.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/SN65HVD485EDR?qs=QViXGNcIEAu4qPXpVA5%252B5Q%3D%3D"
-			(at 210.82 911.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Part Number" "SN65HVD485EDR"
-			(at 210.82 1011.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Arrow Price/Stock" "https://www.arrow.com/en/products/sn65hvd485edr/texas-instruments?region=nac"
-			(at 210.82 1111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "LCSC" "C27899"
+		(property "LCSC" "C882408"
 			(at 189.23 116.84 0)
 			(hide yes)
 			(show_name no)
