@@ -51,12 +51,16 @@ UART_HandleTypeDef huart3;
 uint8_t uart_rx_buffer[589]; //rx buffer is 589 bytes
 uint8_t uart_tx_buffer[2]; //tx buffer is 2 bytes
 uint8_t module_ID = 1;
-uint8_t microswitch = 0; //0 is off, 1 is on
 
-uint8_t led_color_1[3]; // led color pixel 1 [R val, G val, B val]
+uint8_t microswitch[4] = 0; //0 is off, 1 is on
+
+uint8_t led_color_1[3]; // led color pixel 1 [R val, G val, B val]z
 uint8_t led_color_2[3];
 uint8_t led_color_3[3];
 uint8_t led_color_4[3];
+
+uint8_t potentialMan[4] = 0; // potentially microswitch may be on. slop variable to move while loop into main :(
+uint32_t timeStart[4] = 0;
 
 // state enums - idle, waiting, transmitted,
 typedef enum {
@@ -175,6 +179,48 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+	  // microswitch sensing
+		if (potentialMan[0] == 1) {
+			if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_15) == GPIO_PIN_RESET) {
+				microswitch[0] = 0;
+			}
+			else if (HAL_GetTick() - timeStart[0] >= 10) {
+				microswitch[0] = 1;
+			}
+			potentialMan[0] = 0;
+		}
+
+		if (potentialMan[1] == 1) {
+			if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_3) == GPIO_PIN_RESET) {
+				microswitch[1] = 0;
+			}
+			else if (HAL_GetTick() - timeStart[1] >= 10) {
+				microswitch[1] = 1;
+			}
+			potentialMan[1] = 0;
+		}
+
+		if (potentialMan[2] == 1) {
+			if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_4) == GPIO_PIN_RESET) {
+				microswitch[2] = 0;
+			}
+			else if (HAL_GetTick() - timeStart[2] >= 10) {
+				microswitch[2] = 1;
+			}
+			potentialMan[2] = 0;
+		}
+
+		if (potentialMan[3] == 1) {
+			if (HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_5) == GPIO_PIN_RESET) {
+				microswitch[3] = 0;
+			}
+			else if (HAL_GetTick() - timeStart[3] >= 10) {
+				microswitch[3] = 1;
+			}
+			potentialMan[3] = 0;
+		}
+
 	  if (state == WAITING) {
 		  if ((TIM1 -> CNT) > (300 + ((50 + 150) * (frame - 1)))) {
 			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // data enable high
@@ -590,29 +636,30 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) { // when rx buffer is f
 //    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // re-arm
 }
 
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) { // when rx buffer is filled, this function will get called -- ie when biiig frame transmit guy done
-	if (uart_rx_buffer[0] == 0xFF && state == IDLE) {
-		state = WAITING;
-		__HAL_TIM_SET_COUNTER(&htim1,0); // start millisecond timer @ 0
-		led_color_1[RED] = uart_rx_buffer[(module_id * 12) - 11]; // check protocol sheet for more information, sets colors to what is put in buffer (based on module ID)
-		led_color_1[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 1];
-		led_color_1[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 2];
-
-		led_color_2[RED] = uart_rx_buffer[(module_id * 12) - 11 + 3];
-		led_color_2[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 4];
-		led_color_2[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 5];
-
-		led_color_3[RED] = uart_rx_buffer[(module_id * 12) - 11 + 6];
-		led_color_3[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 7];
-		led_color_3[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 8];
-
-		led_color_4[RED] = uart_rx_buffer[(module_id * 12) - 11 + 9];
-		led_color_4[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 10];
-		led_color_4[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 11];
-
-	}
-//    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // re-arm
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) { // tx callback
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET); //pull DE low
 }
+
+	/* MICROSWITCH INTERRUPT */
+	void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+		if (GPIO_Pin == GPIO_PIN_15) {
+			potentialMan[0] = 1;
+			timeStart[0] = HAL_GetTick();
+	    }
+	    if (GPIO_Pin == GPIO_PIN_3) {
+	    	potentialMan[1] = 1;
+			timeStart[1] = HAL_GetTick();
+	    }
+	    if (GPIO_Pin == GPIO_PIN_4) {
+	    	potentialMan[2] = 1;
+			timeStart[2] = HAL_GetTick();
+	    }
+		if (GPIO_Pin == GPIO_PIN_5) {
+			potentialMan[3] = 1;
+			timeStart[3] = HAL_GetTick();
+		}
+	}
+
 
 /* USER CODE END 4 */
 
