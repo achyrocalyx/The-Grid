@@ -175,7 +175,18 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
+	  if (state == WAITING) {
+		  if ((TIM1 -> CNT) > (300 + ((50 + 150) * (frame - 1)))) {
+			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // data enable high
+			  //TO-DO: transmit switch data
+			  state = TRANSMITTED;
+		  }
+	  }
+	  else if (TIM1 -> CNT > 13000) { // if timer > 13ms
+		  __HAL_TIM_SET_COUNTER(&htim1,0); // re-start millisecond timer @ 0
+		  HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // restart listening to UART
+		  state = IDLE;
+	  }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -555,11 +566,11 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 
 /* UART Receive Callback */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) { // when rx buffer is filled, this function will get called
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) { // when rx buffer is filled, this function will get called -- ie when biiig frame transmit guy done
 	if (uart_rx_buffer[0] == 0xFF && state == IDLE) {
 		state = WAITING;
-		__HAL_TIM_SET_COUNTER(&htim1,0);
-		led_color_1[RED] = uart_rx_buffer[(module_id * 12) - 11]; // check protocol sheet for more information
+		__HAL_TIM_SET_COUNTER(&htim1,0); // start millisecond timer @ 0
+		led_color_1[RED] = uart_rx_buffer[(module_id * 12) - 11]; // check protocol sheet for more information, sets colors to what is put in buffer (based on module ID)
 		led_color_1[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 1];
 		led_color_1[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 2];
 
@@ -574,8 +585,33 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) { // when rx buffer is f
 		led_color_4[RED] = uart_rx_buffer[(module_id * 12) - 11 + 9];
 		led_color_4[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 10];
 		led_color_4[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 11];
+
 	}
-    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // re-arm
+//    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // re-arm
+}
+
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart) { // when rx buffer is filled, this function will get called -- ie when biiig frame transmit guy done
+	if (uart_rx_buffer[0] == 0xFF && state == IDLE) {
+		state = WAITING;
+		__HAL_TIM_SET_COUNTER(&htim1,0); // start millisecond timer @ 0
+		led_color_1[RED] = uart_rx_buffer[(module_id * 12) - 11]; // check protocol sheet for more information, sets colors to what is put in buffer (based on module ID)
+		led_color_1[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 1];
+		led_color_1[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 2];
+
+		led_color_2[RED] = uart_rx_buffer[(module_id * 12) - 11 + 3];
+		led_color_2[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 4];
+		led_color_2[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 5];
+
+		led_color_3[RED] = uart_rx_buffer[(module_id * 12) - 11 + 6];
+		led_color_3[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 7];
+		led_color_3[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 8];
+
+		led_color_4[RED] = uart_rx_buffer[(module_id * 12) - 11 + 9];
+		led_color_4[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 10];
+		led_color_4[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 11];
+
+	}
+//    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // re-arm
 }
 
 /* USER CODE END 4 */
