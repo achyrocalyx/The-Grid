@@ -580,7 +580,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "The_Grid_PCB.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

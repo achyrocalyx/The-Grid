@@ -111,7 +111,7 @@ def tx_loop():
         with lock:
             current_switch_state = dict(switch_state)  # snapshot to avoid holding lock during frame build
 
-        switch_reactive_frame(reusable_buf, current_switch_state, module_ids=(24, 25))
+        switch_reactive_frame(reusable_buf, current_switch_state, module_ids=(1, 2))
         ser.write(bytes(reusable_buf))
 
         elapsed = time.perf_counter() - loop_start

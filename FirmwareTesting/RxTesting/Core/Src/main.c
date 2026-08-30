@@ -70,8 +70,28 @@ UART_HandleTypeDef huart3;
 /* USER CODE BEGIN PV */
 
 uint8_t rainbow_flash = 0;
-uint8_t uart_rx_buffer[5];
-uint8_t expected_rx_buffer[5] = {1, 0, 1, 0, 1};
+uint8_t uart_rx_buffer[589];
+uint8_t module_id = 1;
+uint8_t uart_tx_buffer[2];
+uint8_t microswitch_states[4];
+
+uint8_t led_color_1[3];
+uint8_t led_color_2[3];
+uint8_t led_color_3[3];
+uint8_t led_color_4[3];
+
+typedef enum {
+	IDLE,
+	WAITING_TRANSMIT,
+	ALREADY_TRANSMITTED
+} State;
+
+typedef enum {
+	RED,
+	GREEN,
+	BLUE
+} Color;
+
 
 /* USER CODE END PV */
 
@@ -149,9 +169,14 @@ int main(void)
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
 
-  /* Initialize receiving*/
-  HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 5);
+  HAL_TIM_Base_Start(&htim1);
 
+  /* Initialize receiving*/
+  HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589);
+
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+
+  State state = IDLE;
 
   /* USER CODE END 2 */
 
@@ -529,10 +554,23 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 /* UART Receive Callback */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-    if (memcmp(uart_rx_buffer, expected_rx_buffer, 5) == 0) {
-    	rainbow_flash = !rainbow_flash;
-    }
-    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 5); // re-arm
+	if (uart_rx_buffer[0] == 0xFF && state == IDLE) {
+		state = WAITING_TRANSMIT;
+		__HAL_TIM_SET_COUNTER(&htim1,0);
+		led_color_1[RED] = uart_rx_buffer[(module_id * 12) - 11];
+		led_color_1[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 1];
+		led_color_1[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 2];
+		led_color_2[RED] = uart_rx_buffer[(module_id * 12) - 11 + 3];
+		led_color_2[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 4];
+		led_color_2[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 5];
+		led_color_3[RED] = uart_rx_buffer[(module_id * 12) - 11 + 6];
+		led_color_3[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 7];
+		led_color_3[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 8];
+		led_color_4[RED] = uart_rx_buffer[(module_id * 12) - 11 + 9];
+		led_color_4[GREEN] = uart_rx_buffer[(module_id * 12) - 11 + 10];
+		led_color_4[BLUE] = uart_rx_buffer[(module_id * 12) - 11 + 11];
+	}
+    HAL_UART_Receive_IT(&huart3, uart_rx_buffer, 589); // re-arm
 }
 
 

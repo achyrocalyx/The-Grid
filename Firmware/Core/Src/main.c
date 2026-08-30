@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define MODULE_ID 25
+#define MODULE_ID 2
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

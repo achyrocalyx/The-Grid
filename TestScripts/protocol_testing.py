@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 LED Floor Test CLI
-thx claude
+everybody say thank you claude
 ===================
 Interfaces with the STM32 controller over USB-CDC (virtual COM port).
 
