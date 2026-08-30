@@ -104,15 +104,13 @@ def switch_reactive_frame(buf, switch_state, module_ids=(24, 25)):
 
 def tx_loop():
     frame_interval = 1.0 / FPS
-    reusable_buf = bytearray(FRAME_LEN)
+    t0 = time.perf_counter()
     while running:
         loop_start = time.perf_counter()
 
-        with lock:
-            current_switch_state = dict(switch_state)  # snapshot to avoid holding lock during frame build
-
-        switch_reactive_frame(reusable_buf, current_switch_state, module_ids=(1, 2))
-        ser.write(bytes(reusable_buf))
+        t = loop_start - t0
+        buf = rainbow_frame(t)   # <-- swap this line for chase_frame(t) if you'd rather test the chase pattern
+        ser.write(bytes(buf))
 
         elapsed = time.perf_counter() - loop_start
         sleep_time = frame_interval - elapsed
