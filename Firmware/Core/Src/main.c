@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#define MODULE_ID 2
+#define MODULE_ID 7
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -312,14 +313,16 @@ int main(void)
 
 	  if (state == WAITING) {
 		  if ((TIM1 -> CNT) > (300 + ((50 + 150) * (MODULE_ID - 1)))) {
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // data enable high
 			  /* Format tx data buffer */
 			  uart_tx_buffer[0] = MODULE_ID;
 			  uart_tx_buffer[1] = (microswitch_reported[3] << 3) | (microswitch_reported[2] << 2) | (microswitch_reported[1] << 1) | (microswitch_reported[0] << 0);
 
 //			  HAL_UART_Transmit_IT(&huart3, uart_tx_buffer, SWITCH_DATA_LENGTH);
-			  HAL_UART_Transmit(&huart3, uart_tx_buffer, SWITCH_DATA_LENGTH, 10);
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
+			  if (uart_tx_buffer[1]) {
+				  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET); // data enable high
+				  HAL_UART_Transmit(&huart3, uart_tx_buffer, SWITCH_DATA_LENGTH, 10);
+				  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET); // pull DE low
+			  }
 			  state = TRANSMITTED;
 		  }
 	  }
